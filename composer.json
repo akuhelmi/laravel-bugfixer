@@ -1,0 +1,22 @@
+{
+    "name": "aku/laravel-bugfixer",
+    "description": "Laravel package to capture runtime errors and send them to Bugfixer SaaS via queue.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Aku\\Bugfixer\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "illuminate/support": "^9.0|^10.0|^11.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aku\\Bugfixer\\BugfixerServiceProvider"
+            ]
+        }
+    }
+}
